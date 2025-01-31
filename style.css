@@ -1,8 +1,10 @@
 :root {
-    --color-primary: #4B69FD;
-    --color-secondary: #FFF9EB;
+   
+   /* --color-primary: #ebe400;*/
+   --color-primary:#FFff7e;
+    --color-secondary: #Fdfda7;
     --color-tertiary: #C4C4C4;
-    --color-button: #fe652b;
+    --color-button: #fa5e25;
     --color-button-hover: #e55720;
     --color-text: #444444;
     --color-white: #FFFFFF;
@@ -37,6 +39,12 @@ body {
     justify-content: center;
     align-items: center;
     padding: 40px 0 0;
+    gap: 200px;
+    /*background-image: url(assets/amigos\ juntos.jpeg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: cover*/
+    
 }
 
 /* Seção de entrada */
@@ -55,17 +63,21 @@ body {
 /* Títulos */
 .main-title {
     font-size: 48px;
-    font-family: "Merriweather", serif;
+    font-family: "pacifico";
+    "Merriweather", serif;
     font-weight: 900;
-    font-style: italic;
-    color: var(--color-white);
+    font-style:normal;
+    color:#333
+    gap: 50px;
+    /*var(--color-white);*/
 }
 
 .section-title {
     font-family: "Inter", serif;
     font-size: 36px;
     font-weight: 700;
-    color: var(--color-primary);
+    color:#333;
+    /*color: var(--color-primary);*/
     margin: 10px 0;
     text-align: center;
 }
@@ -116,13 +128,17 @@ button {
 }
 
 .button-add {
-    background-color: var(--color-tertiary);
-    color: var(--color-text);
-    border-radius: 0 25px 25px 0;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background-color: var(--color-button);
+    color: var(--color-white);
+    border-radius: 0 25px  25px 0;
+    
 }
 
 .button-add:hover {
-    background-color: #a1a1a1;
+    background-color:var(--color-button-hover);
 }
 
 /* Listas */
@@ -137,7 +153,7 @@ ul {
 .result-list {
     margin-top: 15px;
     color: #05DF05;
-    font-size: 22px;
+    font-size: 40px;
     font-weight: bold;
     text-align: center;
 }

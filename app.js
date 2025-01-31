@@ -25,8 +25,15 @@ function adicionarAmigo() {
     
     console.log(amigos);
     limparNome ();
+    
+    
 
 }
+
+
+
+
+
 
 console.log(amigos);
 
@@ -41,7 +48,7 @@ function listaComHTML() {
         novoNaLista.textContent = amigos[i];
         lista.appendChild(novoNaLista);
     }
-       
+    
 }
 
     
@@ -55,14 +62,14 @@ function listaComHTML() {
             return;
         }
     
-        // Gera um índice aleatório
         let amigoAleatorio = Math.floor(Math.random() * amigos.length);
     
         // Obtém o nome sorteado
         let amigoSorteado = amigos[amigoAleatorio];
-    
-        // Exibe o resultado no HTML
         resultado.innerHTML = `<li>Amigo sorteado: ${amigoSorteado}</li>`;
+
+        
+      
     }
 
 function limparNome() {
